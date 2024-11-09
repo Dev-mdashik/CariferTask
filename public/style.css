@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --color1 : #a4a4a4;
+    --color2 : #3059ff;
+    --color3 : #28292b;
+    --color4 : #ff00b5;
+}
+
+body {
+    font-family: "Nunito", sans-serif !important;
+}
+
+main {
+    margin: 2rem 0;
+    z-index: 99;
+    position: relative;
+}
+.blob-img {
+    position: absolute;
+    bottom: 0;
+}
+.brand{
+    display: flex;
+    align-items: center;
+}
+.brand .text-1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+.brand .text-2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color2);
+}
+
+/* Common Style */
+main .card{
+    background: #fff;
+    padding: 0 2rem;
+    box-shadow: 7px 8px 22px #5d5d5e17;
+    border-radius: 10px;
+}
+main .card .card-header{
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #e9e4ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .card .card-header .title{
+    font-size: 20px;
+    color: var(--color2);
+    font-weight: 500;
+}
+main .card .card-header .back-route a{
+    padding: 0.8rem;
+    /* background: var(--color2); */
+    background: var(--color4);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 4px 12px var(--color1);
+    width: 200px;
+}
+
+main .card .card-body{
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #e9e4ff;
+}
+main .card .card-body .save-btn{
+   display: grid;
+   place-items: center;
+   width: 100%;
+}
+main .card .card-body button{
+    padding: 0.8rem;
+    background: var(--color2);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 4px 12px var(--color1);
+    width: 150px;
+}
+
+main .car-creation .card .card-body .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+main .car-creation .card .card-body .wrapper .box{
+    width: 48%;
+}
+main .car-creation .card .card-body .wrapper .form-control{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.8rem;
+}
+main .car-creation .card .card-body .actions{
+    display: flex;
+}
+main .car-creation .card .card-body .actions button{
+    margin: 0 0.7rem;
+    width: 50px;
+    padding: 0.6rem;
+    border-radius: 12px;
+}
+main .car-creation .card .card-body .actions .edit{
+    background: var(--color2);
+}
+main .car-creation .card .card-body .actions .delete{
+    background: var(--color2);
+}
+
+
+/* Car List */
+main .card .card-body .datatable{
+   overflow-x: auto;
+}
+main .card .card-body table{
+    display: table;
+    border: 1px solid #ddd;
+    width: 100%;
+    border-spacing: 10px;
+}
+main .card .card-body table th{
+    padding: 10px;
+    border-bottom: 1.5px solid #ddd;
+}
+main .card .card-body table td{
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/*  */
+main .car-creation .form-control label{
+    color: var(--color3);
+    font-size: 15px;
+    font-weight: 700;
+}
+main .car-creation .form-control input{
+    color: var(--color3);
+    border-radius: 5px;
+    border-color: #f0f0f099;
+    background: #f0f0f099;
+    font-size: 15px;
+}
+main .car-creation .form-control select{
+    color: var(--color3);
+    border-radius: 5px;
+    border-color: #f0f0f099;
+    background: #f0f0f099;
+    font-size: 15px;
+}
+
+/* MESSAGES */
+main .car-creation .wrapper .form-control p{
+    color: red;
+    font-size: 14px;
+}
+main .status{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+main .status .error{
+    background: red;
+}
+main .status .success{
+    background: #38ff3f;
+}
+main .status p{
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 0.7rem;
+    border-radius: 8px;
+    position: relative;
+    bottom: 1rem;
+    box-shadow: 6px 6px 10px #ddd;
+}
+
+
+.authorized {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.authorized .modal {
+    background: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 7px 8px 22px #5d5d5e17;;
+}
+.authorized .modal > div:first-child  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.authorized .modal div  {
+    width: 100%;
+}
+.authorized .modal h1  {
+    font-size: 8rem;
+    font-weight: 800;
+    color: orange;
+}
+.authorized .modal p  {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: orange;
+}
+.authorized .modal button  {
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    background: orange;
+    width: 100%;
+    border-radius: 10px;
+
+}
+@media screen and (min-width : 900px) {
+    main {
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (max-width : 480px) {
+
+    main .car-creation .card .card-body .wrapper{
+        display: block;
+        justify-content: space-between;
+    }
+    main .car-creation .card .card-body .wrapper .box {
+        width: 100%;
+    }
+
+}
+
+
+
+
+::-webkit-scrollbar-thumb {
+    background: var(--color2);
+    border-radius: 10px;
+    width: 2px;
+    height: 2px;
+}
+::-webkit-scrollbar {
+    width: 3px;
+}
+::-webkit-scrollbar-track {
+    background: #f7f7f7;
+    border-radius: 10px;
+}
