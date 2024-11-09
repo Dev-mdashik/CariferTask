@@ -71,6 +71,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## Following Steps:
 - **[Step](1)**
 Run the following commands to migrate the database and start the development server:
+⦁	composer install
+⦁	cp .env.example .env
+⦁	php artisan key:generate
 ⦁	php artisan migrate
 ⦁	php artisan serve
 
